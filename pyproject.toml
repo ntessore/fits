@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "fits"
+authors = [
+    {name = "Nicolas Tessore", email = "n.tessore@ucl.ac.uk"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["FITS", "Flexible Image Transport System", "Astronomy"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.8"
+dynamic = ["version", "description"]
+
+[project.urls]
+Homepage = "https://github.com/ntessore/fits"
+Issues = "https://github.com/ntessore/fits/issues"
+
+[tool.flit.sdist]
+exclude = [".*"]
